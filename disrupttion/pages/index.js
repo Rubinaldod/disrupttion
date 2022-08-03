@@ -1,11 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import LeadingPage from './leading/leading';
 
 export default function Home() {
   return (
-    <div>
-      <p>Init Disrupttion</p>
+    <div >
+      <LeadingPage />
     </div>
   )
 }
