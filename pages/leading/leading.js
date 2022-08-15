@@ -53,8 +53,8 @@ function LeadingPage () {
                     </div>
 
                     <div className='flex flex-col items-center mt-20'>
-                        <p className='w-[550px] text-5xl text-center text-white '>Disrupttion, a  engenharia   vista  sob perspetiva  angolana</p>
-                        <p className='w-[500px] mt-4 text-white text-center text-base'>Uma coleção diversificada de dados relevante: artigos e projetos técnico-científicos, monografias teses e muito mais.</p>
+                        <p className='w-[550px] text-6xl text-center text-white '>Disrupttion, a  engenharia   vista  sob perspetiva  angolana</p>
+                        <p className='w-[500px] mt-4 text-white text-center text-lg'>Uma coleção diversificada de dados relevante: artigos e projetos técnico-científicos, monografias teses e muito mais.</p>
                         <button className='w-[98px] p-2 hover:bg-blue-100 mt-8 bg-white rounded-full' name='Explorar' value='Explorar' >Explorar</button>
                     </div>
                 </section>
