@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { GrMailOption } from "@react-icons/all-files/gr/GrMailOption";
+import { AiFillMail } from "@react-icons/all-files/ai/AiFillMail";
 
 const Header = ({ textColor, not }) => (
     <div className='flex w-full justify-between items-center p-8'>
@@ -12,17 +12,19 @@ const Header = ({ textColor, not }) => (
         {/* Profile */}
         <div className='flex flex-col items-center justify-center'>
             <div className='flex items-center flex-row text-white p-4'>
-                <span className='mr-4 text-white' >
-                    <GrMailOption width={20} height={20} className={ textColor ? textColor :  'text-white' }/>
+                <span className='mr-4 text-slate-100' >
+                    <AiFillMail width={50} height={50} className={`text-xl hover:translate-y-1 hover:cursor-pointer ease-in-out duration-75 ${ textColor ? textColor :  'text-white' }`}/>
                 </span>
-                <Image 
-                    className='ml-3 object-cover border boder-white-500 rounded-full' 
-                    alt='foto de perfil' 
-                    width={50}
-                    height={50}
-                    src='/user.jpg'
-                />
-                <p className={`ml-3 font-semibold text-lg ${textColor?textColor :  'text-white'}`}>Jailson Coluna</p> 
+               
+                    <Image 
+                        className='ml-3 object-cover rounded-full border-cyan-400 hover:cursor-pointer hover:border-2 hover:border-cyan-400' 
+                        alt='foto de perfil' 
+                        width={50}
+                        height={50}
+                        src='/user.jpg'
+                    />
+               
+                <p className={`ml-3 font-semibold text-lg hover:cursor-pointer hover:translate-y-1 ${textColor?textColor :  'text-white'}`}>Jailson Coluna</p> 
             </div>
                 <button className='w-[198px] p-2 hover:bg-slate-100 hover:text-slate-800 ease-in duration-75 bg-white rounded-full text-black border border-slate-300'>
                     Compartilhe seu trabalho
