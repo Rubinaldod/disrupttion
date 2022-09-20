@@ -1,32 +1,22 @@
-
-import Header from "../../components/header";
 import { NextUIProvider } from '@nextui-org/react';
+import Header from "../../components/header";
+import Nav from "../../components/nav";
+import ListingMagazine from './listingmagazine';
 
-const Revista = () => (
-    <NextUIProvider>
-        <div className="">
-            <div className="bg-indigo-500">
-                <Header />
-            </div>
+function Revista (){
+    const arr = [1,2,3,4,5,6];
 
-            <div className="flex flex-row items-center justify-between p-3 bg-gray-100">
-                <p className="text-2xl font-bold">REVISTAS</p>
-                <input 
-                    className="p-4 text-sm w-96 rounded-full"
-                    type="text" 
-                    name="pesquisar" 
-                    placeholder="Pesquisar"
-                />
-                <p>Minha biblioteca</p>
-            </div>
-
-            {/* container da revista */}
+    return(
+        <NextUIProvider>
             <div className="">
-                <div className="">Revistas</div>
-                <div className="">Info das revistas</div>
+                <Header textColor='text-slate-800' not={true}/>
+                <Nav textColor='text-slate-800'/>
+                <div className="flex m-8 justify-start flex-wrap">
+                    { arr.map((magazine,index) => <ListingMagazine id={index} key={index}/> ) }
+                </div>
             </div>
-        </div>
-    </NextUIProvider>
-);
+        </NextUIProvider>
+    );
+};
 
 export default Revista; 
